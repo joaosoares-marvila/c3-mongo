@@ -12,8 +12,8 @@ class MongoQueries:
         with open(diretorio_autentication, "r") as f:
             self.user, self.passwd = f.read().split(',')
 
-        self.host = "cluster0.jmc01ub.mongodb.net"
-        self.connection_string = f"mongodb+srv://{self.user}:{self.passwd}@{self.host}/?retryWrites=true&w=majority"
+        self.host = "cluster0.jmc01ub.mongodb.net/?retryWrites=true&w=majority"
+        self.connection_string = f"mongodb+srv://{self.user}:{self.passwd}@{self.host}"
 
 
     def __del__(self):
