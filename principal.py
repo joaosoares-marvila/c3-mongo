@@ -116,7 +116,7 @@ def run():
                 print(tela_inicial.get_updated_screen())
                 config.clear_console()
 
-                continuar = input('Deseja remover mais algum registro? digite "SIM" para remover, digite "NAO" para voltar ao menu de opções: ')
+                continuar = input('Deseja visualizar mais algum relatório? digite "SIM" para remover, digite "NAO" para voltar ao menu de opções: ')
 
                 if continuar.lower() == 'nao':
                     config.clear_console()

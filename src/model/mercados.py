@@ -12,7 +12,6 @@ class Mercado:
     
         # Driver
         options = Options()
-        options.add_argument('--headless')
         options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
         self.driver = webdriver.Chrome(options=options)
 
