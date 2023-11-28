@@ -49,7 +49,7 @@ Lembre-se de que é necessário ter o Python 3.9 instalado em sua máquina para 
 
 ## Vídeo de execução
 
-CLique [aqui]([https://www.youtube.com/watch?v=oa_AFW3yi-M](https://youtu.be/Xlr-oohPR6U)) para assistir o vídeo de execução do código.
+CLique [aqui](https://www.youtube.com/watch?v=Xlr-oohPR6U) para assistir o vídeo de execução do código.
 
 
 
