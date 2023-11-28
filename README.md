@@ -1,22 +1,12 @@
 # Instruções para Configurar e Executar o Projeto
 
-Este projeto requer a configuração das credenciais de acesso ao banco de dados oracle e a criação de tabelas com dados de mercado para funcionar corretamente.
+Este projeto requer a configuração das credenciais de acesso ao banco de dados mongo e a criação de coleções com dados de mercado para funcionar corretamente.
 
-## Configuração das Credenciais do Banco de Dados Oracle
+## Configuração das Credenciais do Banco de Dados Mongo
 
-As credenciais de acesso ao banco de dados estão localizadas no código, no seguinte diretório: `src/conexion/passphrase/authentication.oracle`. O usuário é 'sys' e a senha é '123mudar'. Certifique-se de ajustar essas credenciais de acordo com suas configurações.
+As credenciais de acesso ao banco de dados estão localizadas no código, no seguinte diretório: `src/conexion/passphrase/authentication.mongo`. O usuário é 'labdatabase' e a senha é 'labDatabase2022'. Certifique-se de ajustar essas credenciais de acordo com suas configurações.
 
-## Criação de Tabelas e Inserção de Dados
-
-Para criar as tabelas necessárias e inserir os dados do mercado, siga estas etapas:
-
-1. Abra o arquivo `sql/create_tables.sql` e verifique se o usuário especificado corresponde ao seu usuário do banco de dados.
-
-2. Abra o arquivo `sql/inserting_samples_records.sql` e faça a mesma verificação.
-
-3. Abra o arquivo `utils/config.py` e faça a mesma verificação.
-
-## Execução dos Scripts
+## Criação de Coleções e Inserção de Documentos
 
 Após configurar as credenciais e verificar os arquivos SQL, você pode iniciar a execução dos scripts. Certifique-se de que o Python 3.9 esteja instalado em sua máquina com o seguinte comando:
 
@@ -43,10 +33,10 @@ Instale as dependências com o seguinte comando:
 pip install -r requirements.txt
 ````
 
-Após a instalação das dependências, execute o seguinte comando para criar as tabelas e inserir dados:
+Após a instalação das dependências, execute o seguinte comando para criar as Coleções e inserir os documentos:
 
 ```bash
-python3.9 create_tables_and_records.py
+python3.9 createCollectionsAndData.py
 ````
 
 Por fim, execute o programa principal com o seguinte comando:
@@ -59,7 +49,7 @@ Lembre-se de que é necessário ter o Python 3.9 instalado em sua máquina para 
 
 ## Vídeo de execução
 
-CLique [aqui](https://www.youtube.com/watch?v=oa_AFW3yi-M) para assistir o vídeo de execução do código.
+CLique [aqui](https://www.youtube.com/watch?v=Xlr-oohPR6U) para assistir o vídeo de execução do código.
 
 
 
